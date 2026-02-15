@@ -25,7 +25,7 @@ function triangle(val1, type1, val2, type2) {
             a = getV("leg");
             c = getV("hypotenuse");
             if (a >= c) {
-                console.log("Катет не може бути більшим за гіпотенузу [cite: 38]");
+                console.log("Катет не може бути більшим за гіпотенузу");
                 return "failed";
             }
             b = Math.sqrt(Math.pow(c, 2) - Math.pow(a, 2)); // теорема піфагора
