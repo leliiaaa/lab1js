@@ -73,6 +73,11 @@ function triangle(val1, type1, val2, type2) {
             return "failed";
         }
 
+        if (!(a + b > c && a + c > b && b + c > a)) {
+            console.log("Помилка: Неправильні сторони трикутника. Вчіть правила.");
+            return "failed";
+        }
+
         // вивід результатів 
         // познач: a, b (катети), c (гіпотенуза), alpha, beta (кути) 
         console.log(`a = ${a}`);
